@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Widget Demo</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        line-height: 1.6;
+      }
+      h1 {
+        color: #333;
+      }
+      .example {
+        background: #f5f5f5;
+        padding: 20px;
+        border-radius: 8px;
+        margin: 20px 0;
+      }
+      code {
+        background: #e0e0e0;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-family: "Courier New", monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Демонстрация виджета обратной связи</h1>
+
+    <div class="example">
+      <h2>Как использовать:</h2>
+      <p>
+        Виджет появится в правом нижнем углу. Нажмите на него, чтобы открыть
+        форму обратной связи.
+      </p>
+
+      <h3>Параметры:</h3>
+      <ul>
+        <li><code>data-project-id</code> - ID проекта (обязательно)</li>
+        <li>
+          <code>data-position</code> - Позиция (bottom-right, bottom-left,
+          top-right, top-left)
+        </li>
+        <li><code>data-theme</code> - Тема (light, dark)</li>
+        <li><code>data-color</code> - Основной цвет (hex)</li>
+        <li><code>data-api-url</code> - URL API для отправки данных</li>
+      </ul>
+    </div>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+
+    <!-- Подключение виджета -->
+    <script
+      src="/dist/widget.js"
+      data-project-id="demo-project-123"
+      data-position="bottom-right"
+      data-theme="light"
+      data-color="#0f4c81"
+      data-api-url="http://localhost:3000/api/feedback"
+    ></script>
+  </body>
+</html>
